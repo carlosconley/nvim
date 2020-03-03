@@ -19,11 +19,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ycm-core/YouCompleteMe'
 
 Plug 'chriskempson/base16-vim'
+Plug 'ayu-theme/ayu-vim'
+
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
 "Add colorscheme
-colorscheme base16-tomorrow-night
+colorscheme base16-nord
 
 nmap <C-n> :NERDTreeToggle<CR>
 
