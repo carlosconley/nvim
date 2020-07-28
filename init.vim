@@ -185,6 +185,11 @@ set cursorline
 
 set softtabstop=0 noexpandtab
 
+" esc in insert mode
+inoremap jk <esc>
+" esc in command mode
+cnoremap jk <C-C>
+
 let g:ruby_host_prog = '/home/chris/.gem/ruby/2.4.0/bin/neovim-ruby-host.ruby2.4'
 
 autocmd BufWritePre * %s/\s\+$//e
