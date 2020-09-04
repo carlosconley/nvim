@@ -6,6 +6,8 @@ call plug#begin('C:/Users/Carlos Conley/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'junegunn/goyo.vim'
 
@@ -17,10 +19,13 @@ Plug 'vim-airline/vim-airline-themes'
 
 "Git integration
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 "Completion Apps
 "Plug 'ycm-core/YouCompleteMe'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'sheerun/vim-polyglot'
 
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-two-firewatch'
@@ -28,13 +33,16 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'baskerville/bubblegum'
+Plug 'ndrewxie/Notepad16'
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
 "Add colorscheme
+:set t_Co=256
 colorscheme two-firewatch
 let g:airline_theme='twofirewatch'
 :set bg=dark
@@ -169,6 +177,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+"Coc Python Settings
 "General settings
 set number relativenumber
 
@@ -190,7 +199,6 @@ inoremap jk <esc>
 " esc in command mode
 cnoremap jk <C-C>
 
-let g:ruby_host_prog = '/home/chris/.gem/ruby/2.4.0/bin/neovim-ruby-host.ruby2.4'
-
+let g:ruby_host_prog = 'C:\Ruby27-x64\bin\ruby.exe'
 autocmd BufWritePre * %s/\s\+$//e
 
