@@ -1,2 +1,2 @@
-require("exojay.remap")
 require("exojay.set")
+require("exojay.remap")

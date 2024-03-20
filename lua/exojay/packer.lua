@@ -7,11 +7,13 @@ return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 
+    -- Navigation plugins
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.6',
 		-- or                            , branch = '0.1.x',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+    use('tpope/vim-vinegar')
 
 	-- Treesitter plugins
 	use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
