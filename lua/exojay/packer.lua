@@ -25,10 +25,12 @@ return require('packer').startup(function(use)
 	--Undo tree
 	use('mbbill/undotree')
 
-	-- Tpope's stuff
+    -- Git stuff
 	use('tpope/vim-fugitive')
-	use('tpope/vim-surround')
+    use('airblade/vim-gitgutter')
 
+    -- Surround stuff
+	use('tpope/vim-surround')
 
 	-- LSP
 	use {
