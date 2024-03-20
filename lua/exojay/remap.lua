@@ -22,7 +22,7 @@ vim.keymap.set("n", "<leader>P", [["+p]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
-vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("i", "<C-c>", "<C-[>")
 
 vim.keymap.set("n", "Q", "<nop>")
 -- Don't really need this since it uses tmux

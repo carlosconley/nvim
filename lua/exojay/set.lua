@@ -1,7 +1,7 @@
 
 -- Colorscheme settings
 vim.o.background = "dark"
---vim.cmd[[colorscheme default]]
+-- vim.cmd[[colorscheme default]]
 vim.cmd[[colorscheme gruvbox]]
 
 vim.opt.nu = true
@@ -9,7 +9,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 
 vim.opt.smartindent = true
 
@@ -29,3 +29,17 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
+
+-- Whitespace
+vim.opt.list = true
+local space = "·"
+vim.opt.listchars:append ({
+    tab="▸ ",
+    multispace=space,
+	leadmultispace="|   ",
+    nbsp= "␣",
+    trail= space,
+    --eol="↵",
+    extends="◣",
+    precedes="◢",
+})
