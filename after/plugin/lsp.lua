@@ -34,12 +34,12 @@ require('lspconfig').zls.setup({})
 require('lspconfig').gleam.setup({})
 require('lspconfig').pylsp.setup({})
 
-
 local cmp = require('cmp')
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
         -- Trigger completion on ctrl-space
         ["<C-Space>"] = cmp.mapping.complete(),
+        ["<Tab>"] = cmp.mapping.confirm({select = true}),
     })
 })
 
